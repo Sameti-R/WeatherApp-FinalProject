@@ -61,3 +61,11 @@
 .active:hover {
   cursor: text;
 }
+.degreeMax {
+  font-weight: bold;
+  color: #ef5a5a;
+}
+.degreeMin {
+  font-weight: bold;
+  color: blue;
+}

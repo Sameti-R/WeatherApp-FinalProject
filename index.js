@@ -172,10 +172,13 @@ function displayForecast(response) {
             <br />
             <span class="degreeMax" id="degree-max"> ${Math.round(
               forecastDay.temp.max
-            )}</span>°
+            )}°</span>  
+
+|
+
             <span class="degreeMin" id="degree-min">${Math.round(
               forecastDay.temp.min
-            )} </span>°
+            )}° </span>
           </p>
         `;
     }
