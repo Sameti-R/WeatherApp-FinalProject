@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>My weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mainPage">
+        <form class="myForm" id="my-form">
+          <input
+            type="search"
+            class="searchEngine"
+            id="search-engine"
+            placeholder="Enter a city"
+            autofocus="on"
+            autocomplete="off"
+          />
+          <input
+            type="submit"
+            class="searchButton"
+            id="search-button"
+            value="Search"
+          />
+        </form>
+        <div class="row text-center">
+          <p class="col">
+            <span class="city" id="the-city">London</span> <br /> <span class="dayTime"> Last updated: <span id="day-time">
+            <span
+              class="day"
+              id="the-day"
+              >Saturday</span
+            >, <span class="time">
+              <span id="hour">22</span>:<span id="minute">45</span> </span></span>
+             
+            
+          </p>
+          <p class="col">
+            <span class="temperature"
+              ><span class="degree" id="celcius">12</span
+              ><a href="#" class="symbol active" id="metric-temp">℃</a> <span class="degree">|</span> <span
+                class="degree"
+                id="fahrenheit"
+              ></span
+              > <a href="#" class="symbol" id="imperial-temp">℉</a> </span
+            > <br>  <span class="weather" id="weather-condition">mostly cloudy</span>
+            </span> 
+            <br>
+             <img id="weather-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAjdJREFUeNrtmsGtgzAMhjtCRmAERsgIHYFjjx2BERiBEToCI+TaG2+DbJBnKj8pD1Eaiv8AwpX+C1Ap/hzHjpNLCOFyZl0UgAJQAApAASgABaAAFIACODEA9C/83AypIrUkRwpv5Pib4dsCNp5cAMgIS3rMGPxJw3/t4QDQoEtSt8LwsTpJEFAAAONjNUM4HSIEOO7vJC8Mwa2FkHURZBDSM2KAWu4CwPP5LEgtyZMCy/OzIgKBgGA2BUAGliPDxxreldFM2EU4JAOgwRtSPeHdmj0/Z3z8fcEQasTCiATgEgxMURvNAkR2sOIA2MtBSH60KNbC4dAhAHhBACFDdrBiADj2A0DI7PA4AgB0dihWAaBBXUk92Hhkdqi+BsDGh8ySzg7tGgD9BgC88FrgvgKQIeY/ZgepxXB3m6EFm6bm7ADqQwDggSLUHQVA2KG6P50JQJ+a96UBuC08OwqRerOWGPftkUa7Oc/GrTBKo5b0mEivwzOLAlABjb8v6EY1CXVGgwCAampUqZ5NNP5fuS1aB6w87Zn1PG+XpStOKw3AIro5IONfM0e8EhRsZFxz7EYRACRmgQc0YPMAENrAdJk6UBgAKwojz/W/yQUgXgilARguS5dUd2Yir+foPzSQ7TAfifdLOjZvzhSzQID0A3gmuJTDzIQzRXg4IC9IvFsY68jzWxr/qgvQV2TsRJ1gwMXOIuW+JNWhjtx2DWCDE6fvAOhNUQWgABSAAlAACkABKAAFoABOp1+6Bd0LJ+BorgAAAABJRU5ErkJggg==" alt="weather condition" >
+          </p>
+          <p class="col">
+            
+            <span>Humidty: <span id="humidity"> 26</span>%</span> <br>
+            <span>Wind: <span id="wind"> 10</span ><span id="wind-unit">km</span> </span>
+          </p>
+        </div>
+          <div class="fiveDays" id="forecast"></div>
+      </div>
+      <div class="source">
+        <a
+          class="mylink"
+          href="https://github.com/Sameti-R/weather-app-project"
+          target="_blank"
+          >Open Source,</a
+        >
+        <span class="name"> by Rezvan Sameti</span>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

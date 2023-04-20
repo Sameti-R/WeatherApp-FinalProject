@@ -1,0 +1,63 @@
+.mainPage {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #feffdf;
+}
+.myForm {
+  text-align: center;
+  margin-top: 50px;
+  font-size: large;
+  margin-bottom: 30px;
+}
+.searchEngine {
+  width: 30%;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.searchButton {
+  text-align: center;
+  width: 10%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #ef5a5a;
+  color: aliceblue;
+}
+.city {
+  font-size: 48px;
+  font-style: italic;
+  font-weight: bold;
+}
+.dayTime {
+  font-size: 16px;
+  font-weight: bold;
+}
+.degree {
+  font-size: 32px;
+  font-weight: bold;
+}
+.symbol {
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  top: -15px;
+}
+.weather {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.source {
+  margin-left: 100px;
+}
+.active {
+  color: black;
+}
+.active:hover {
+  cursor: text;
+}
