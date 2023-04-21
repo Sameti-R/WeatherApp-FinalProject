@@ -60,6 +60,10 @@ function showWeather(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  let windUnit = document.querySelector("#wind-unit");
+  windUnit.innerHTML = "km/h";
+  tempC.classList.add("active");
+  tempF.classList.remove("active");
   getForecast(response.data.coord);
 }
 function showWeatherTwo(response) {
@@ -86,6 +90,10 @@ function showWeatherTwo(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  let windUnit = document.querySelector("#wind-unit");
+  windUnit.innerHTML = "mph";
+  tempC.classList.remove("active");
+  tempF.classList.add("active");
   getForecastTwo(response.data.coord);
 }
 function search(city) {
@@ -115,11 +123,6 @@ function changeScaleOne(event) {
   let cityInputElement = document.querySelector("#search-engine");
 
   searchImperial(cityInputElement.value);
-
-  let windUnit = document.querySelector("#wind-unit");
-  windUnit.innerHTML = "mph";
-  tempC.classList.remove("active");
-  tempF.classList.add("active");
 }
 function changeScaleTwo(event) {
   event.preventDefault();
@@ -127,10 +130,6 @@ function changeScaleTwo(event) {
   let cityInputElement = document.querySelector("#search-engine");
 
   search(cityInputElement.value);
-  let windUnit = document.querySelector("#wind-unit");
-  windUnit.innerHTML = "km/h";
-  tempC.classList.add("active");
-  tempF.classList.remove("active");
 }
 
 let tempF = document.querySelector("#imperial-temp");
