@@ -138,15 +138,7 @@ let tempC = document.querySelector("#metric-temp");
 tempC.addEventListener("click", changeScaleTwo);
 function formatDay(timestamp) {
   now = new Date(timestamp * 1000);
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   theDay = days[now.getDay(timestamp)];
   return `${theDay}`;
 }
