@@ -5,7 +5,7 @@
   margin-bottom: 30px;
   border: 1px solid black;
   border-radius: 10px;
-  background: #feffdf;
+  background: #3a78d4;
 }
 .myForm {
   text-align: center;
@@ -30,54 +30,68 @@
 }
 
 .city {
+  color: aliceblue;
   font-size: 32px;
 
   font-weight: bold;
 }
-.dayTime {
-  font-size: 16px;
-}
+
 .degree {
+  color: aliceblue;
   font-size: 32px;
   font-weight: bold;
 }
 .symbol {
+  color: black;
   font-size: 16px;
   text-decoration: none;
   position: relative;
   top: -15px;
 }
+
 .weather {
+  color: aliceblue;
   font-size: 24px;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   text-transform: capitalize;
 }
 .details {
+  color: aliceblue;
   font-weight: bold;
 }
 .source {
   margin-left: 100px;
 }
 .active {
-  color: black;
+  color: aliceblue;
 }
 .active:hover {
   cursor: text;
 }
 .degreeMax {
-  font-weight: bold;
   color: #ef5a5a;
 }
 .degreeMin {
-  font-weight: bold;
   color: blue;
 }
 .fiveDays {
+  font-weight: bold;
   background: white;
   border-radius: 10px;
   margin-bottom: 5px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 5px;
+}
+.dayTime {
+  color: aliceblue;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.name {
+  font-style: italic;
 }
