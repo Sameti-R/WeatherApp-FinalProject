@@ -52,7 +52,7 @@ function showWeather(response) {
   humidity.innerHTML = `${response.data.main.humidity}`;
   let wind = document.querySelector("#wind");
   let windSpeed = Math.round(response.data.wind.speed);
-  wind.innerHTML = `${windSpeed}`;
+  wind.innerHTML = `${windSpeed} `;
   dayTime = document.querySelector("#day-time");
   dayTime.innerHTML = dayFormat(response.data.dt * 1000);
   let iconElement = document.querySelector("#weather-icon");
@@ -82,7 +82,7 @@ function showWeatherTwo(response) {
   humidity.innerHTML = `${response.data.main.humidity}`;
   let wind = document.querySelector("#wind");
   let windSpeed = Math.round(response.data.wind.speed);
-  wind.innerHTML = `${windSpeed}`;
+  wind.innerHTML = `${windSpeed} `;
   dayTime = document.querySelector("#day-time");
   dayTime.innerHTML = dayFormat(response.data.dt * 1000);
   let iconElement = document.querySelector("#weather-icon");

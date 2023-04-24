@@ -70,14 +70,14 @@
   cursor: text;
 }
 .degreeMax {
-  color: #ef5a5a;
+  color: #ec6e4c;
 }
 .degreeMin {
   color: blue;
 }
 .fiveDays {
   font-weight: bold;
-  background: white;
+  background: wheat;
   border-radius: 10px;
   margin-bottom: 5px;
   margin-left: 10px;
@@ -93,5 +93,19 @@
   font-weight: bold;
 }
 .name {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  color: #ec6e4c;
+}
+.text {
+  font-weight: lighter;
   font-style: italic;
+}
+.footage {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+.myLink {
+  font-weight: bold;
 }
